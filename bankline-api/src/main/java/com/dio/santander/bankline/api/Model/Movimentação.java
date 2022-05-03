@@ -1,4 +1,4 @@
-package Model;
+package com.dio.santander.bankline.api.Model;
 
 import java.time.LocalDateTime;
 
