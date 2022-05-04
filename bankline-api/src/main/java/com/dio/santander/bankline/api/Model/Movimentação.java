@@ -25,6 +25,11 @@ public class Movimentação {
     private MovimentaçãoTipo type;
     @Column(name = "id_account")
     private Integer idAccount;
+
+
+    public Movimentação(){
+        this.dateHour = LocalDateTime.now();
+    }
     
     public Integer getId() {
         return id;

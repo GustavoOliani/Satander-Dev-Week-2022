@@ -18,6 +18,7 @@ public class CorrentistaService {
 
     public void save(CorrentistaDto novoCorrentista){
         Correntista correntista = new Correntista();
+        
         correntista.setCpf(novoCorrentista.getCpf());
         correntista.setName(novoCorrentista.getNome());
 

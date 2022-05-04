@@ -30,8 +30,8 @@ public class CorrentistaController {
     }
 
     @PostMapping
-    public void save(@RequestBody CorrentistaDto correntista){
-        correntistaService.save(correntista);
+    public void save(@RequestBody CorrentistaDto correntistaDto){
+        correntistaService.save(correntistaDto);
 
     }
     

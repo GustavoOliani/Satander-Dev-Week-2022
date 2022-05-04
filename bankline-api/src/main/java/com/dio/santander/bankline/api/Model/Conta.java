@@ -15,12 +15,22 @@ public class Conta {
         this.balance = balance;
         this.number = number;
     }
+
+    public Conta(){}
     
     public Long getNumber() {
         return number;
     }
     public Double getBalance() {
         return balance;
+    }
+
+    public void deposita(Double valor){
+        if (this.balance + valor < 0){
+            // TODO: fazer uma exeção que se encaixe melhor
+            throw new ArithmeticException("Saldo negativo");
+        }
+        this.balance += valor;
     }
     
     
