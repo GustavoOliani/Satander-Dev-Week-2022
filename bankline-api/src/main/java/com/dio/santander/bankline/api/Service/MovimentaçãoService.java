@@ -25,7 +25,6 @@ public class MovimentaçãoService {
 
         Double valor = novaMovimentação.getValue();
 
-        System.out.println("O valor que está sendo tranferido é: " + valor);
         if (novaMovimentação.getType() == MovimentaçãoTipo.EXPENSE){
             valor = -1 * valor;
         }

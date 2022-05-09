@@ -31,8 +31,8 @@ public class MovimentaçãoController {
 
     @PostMapping
     public void save(@RequestBody MovimentaçãoDto movimentaçãoDto){
-        if (movimentaçãoDto.getValue() == null){
-            throw new NullPointerException("O Objeto é nulo: " + movimentaçãoDto.getValue());
+        if (movimentaçãoDto == null){
+            throw new NullPointerException("Não foi atribuido valor ao objeto MovimentaçãoDto");
         }
         movimentaçãoService.save(movimentaçãoDto);
     }
